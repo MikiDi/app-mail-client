@@ -24,7 +24,7 @@ defmodule Acl.UserGroups.Config do
         useage: [:read, :write, :read_for_write],
         access: %AlwaysAccessible{}, # TODO: Should be only for logged in users
         graphs: [ %GraphSpec{
-                    graph: "http://mu.semte.ch/application",
+                    graph: "http://mu.semte.ch/graphs/public",
                     constraint: %ResourceConstraint{
                       resource_types: [
                         "http://www.semanticdesktop.org/ontologies/2007/03/22/nmo#Email"
