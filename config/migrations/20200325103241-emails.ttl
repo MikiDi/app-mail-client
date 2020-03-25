@@ -1,0 +1,20 @@
+@prefix : <http://www.semanticdesktop.org/ontologies/2007/03/22/nmo#> .
+@prefix mu: <http://mu.semte.ch/vocabularies/core/> .
+
+<http://example.com/id/email/722f4ffa-08ef-4ab3-9990-7cf79355c1c1> a :Email;
+   mu:uuid "722f4ffa-08ef-4ab3-9990-7cf79355c1c1";
+   :messageFrom <mailto:michael.dierick@redpencil.io>;
+   :emailTo <mailto:info@redpencil.io>;
+   :messageSubject "The future of push-updates in mu.semte.ch is here!".
+
+ <http://example.com/id/email/2717bd97-41fb-4be3-88cd-65a6dc09782f> a :Email;
+    mu:uuid "2717bd97-41fb-4be3-88cd-65a6dc09782f";
+    :messageFrom <mailto:info@redpencil.io>;
+    :emailTo <mailto:michael.dierick@redpencil.io>;
+    :messageSubject "Sure about that?".
+    
+<http://example.com/id/email/e44d7691-7e03-4652-a2dc-b310a0753053> a :Email;
+   mu:uuid "e44d7691-7e03-4652-a2dc-b310a0753053";
+   :messageFrom <mailto:michael.dierick@redpencil.io>;
+   :emailTo <mailto:info@redpencil.io>;
+   :messageSubject "Pretty sure".
