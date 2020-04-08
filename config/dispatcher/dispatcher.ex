@@ -13,6 +13,14 @@ defmodule Dispatcher do
     Proxy.forward conn, path, "http://cache/emails/"
   end
 
+  match "/subscribe/*path", @any do
+    Proxy.forward conn, path, "http://live-update-notifier/subscribe/"
+  end
+
+  match "/subscriptions/*path", @any do
+    Proxy.forward conn, path, "http://live-update-notifier/subscriptions/"
+  end
+
   match "_", %{ last_call: true } do
     send_resp( conn, 404, "Route not found.  See config/dispatcher.ex" )
   end

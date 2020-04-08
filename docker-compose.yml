@@ -63,3 +63,5 @@ services:
       - ./config/migrations:/data/migrations
     environment:
       MU_SPARQL_ENDPOINT: "http://virtuoso:8890/sparql"
+  live-update-notifier:
+    build: https://github.com/MikiDi/live-update-notifier.git
